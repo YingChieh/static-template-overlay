@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <!-- get the required files from 3rd party sources -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="action.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Ying-Chieh Chen</title>
+</head>
+
+<body>
+    <div id="overlay"></div>
+
+    <div class="btn1">
+        <button class="button schriftart" onclick="popupDiv('pop-div');">All Categories</button>
+    </div>
+
+    <div id="pop-div" class="pop-box">
+        <a class="aui_close" href="javascript:hideDiv('pop-div');" style="color:white;text-decoration: none;width: 22px; height: 22px; float: right;font-size: 36px;">×</a>
+        <div class="schriftart" id="pop_header" style="color: white; float: left;font-size: 21px;">All Categories</div>
+        <div class="pop-box-body">
+            <div id="divSer">
+                <div id="DIV1">
+                    <button class="pop-box-button schriftart" id="CLOTHING" onclick="ShowContent(this.id);">CLOTHING</button>
+                    <button class="pop-box-button schriftart" id="COMPUTERS" onclick="ShowContent(this.id);">COMPUTERS</button>
+                    <button class="pop-box-button schriftart" id="DEALNEWS_BLOG" onclick="ShowContent(this.id);">DEALNEWS BLOG</button>
+                    <button class="pop-box-button schriftart" id="ELECTRONICS" onclick="ShowContent(this.id);">ELECTRONICS</button>
+                    <button class="pop-box-button schriftart" id="GAMINGnTOYS" onclick="ShowContent(this.id);">GAMING & TOYS</button>
+                </div>
+                <div id="DIV2">
+                    <button class="pop-box-button schriftart" id="HOMEnGARDEN" onclick="ShowContent(this.id);">HOME & GARDEN</button>
+                    <button class="pop-box-button schriftart" id="MOVIES" onclick="ShowContent(this.id);">MOVIES, MUSIC, BOOKS</button>
+                    <button class="pop-box-button schriftart" id="SPORTSnFITNESS" onclick="ShowContent(this.id);">SPORTS & FITNESS</button>
+                    <button class="pop-box-button schriftart" id="STORE_EVENTS" onclick="ShowContent(this.id);">STORE EVENTS</button>
+                    <button class="pop-box-button schriftart" id="TRAVEL_ENTERTAINMENT" onclick="ShowContent(this.id);">TRAVEL & ENTERTAINMENT</button>
+                </div>
+                <div id="DIV3">
+                    <div class="schriftart" id="Info_Head"></div>
+                    <br/>
+                    <div class="schriftart" id="Info_Content" style="font-weight: 100;font-size: 15px;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
